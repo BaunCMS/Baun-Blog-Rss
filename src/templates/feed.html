@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>RSS Feed</title>
+		<description></description>
+		<link>{{ base_url }}</link>
+		<atom:link href="{{ base_url }}/feed" rel="self" type="application/rss+xml" />
+		{% for post in posts %}
+			<item>
+				<title>{{ post.title }}</title>
+				<link>{{ base_url }}/{{ post.route }}</link>
+				<pubDate>{{ post.published }}</pubDate>
+				<guid>{{ base_url }}/{{ post.route }}</guid>
+				<description>{{ post.excerpt }}</description>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>
