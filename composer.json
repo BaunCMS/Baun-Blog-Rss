@@ -1,0 +1,17 @@
+{
+    "name": "bauncms/baun-blog-rss",
+    "description": "A Baun plugin that adds a RSS feed for the blog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilbert Pellegrom",
+            "email": "gilbert@pellegrom.me"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BaunPlugin\\BlogRss\\": "src/"
+        }
+    }
+}
