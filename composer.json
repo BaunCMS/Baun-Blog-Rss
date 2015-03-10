@@ -1,6 +1,7 @@
 {
     "name": "bauncms/baun-blog-rss",
     "description": "A Baun plugin that adds a RSS feed for the blog",
+    "keywords": ["baun-plugin"],
     "license": "MIT",
     "authors": [
         {
